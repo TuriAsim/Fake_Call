@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/incoming_call"
+    tools:context="com.example.asim.fakecall.MainActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/incomingcall"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icons"/>
+
+    <TextView
+        android:id="@+id/chosenfakename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView1"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="@string/fakecallname" />
+
+    <TextView
+        android:id="@+id/chosenfakenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chosenfakename"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/fakecallnumber" />
+
+    <Button
+        android:id="@+id/answercall"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@null"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp"
+       android:background="@drawable/acceptcall"
+        android:layout_below="@+id/chosenfakenumber"
+        android:layout_toLeftOf="@+id/chosenfakename"
+        android:layout_toStartOf="@+id/chosenfakename"
+        android:layout_marginTop="61dp" />
+
+    <Button
+        android:id="@+id/rejectcall"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/answercall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:contentDescription="@null"
+        android:background="@drawable/rejectcall"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reject"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/chosenfakenumber"
+        android:layout_toEndOf="@+id/chosenfakenumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Accept"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_below="@+id/answercall"
+        android:layout_alignRight="@+id/answercall"
+        android:layout_alignEnd="@+id/answercall" />
+
+</RelativeLayout>
